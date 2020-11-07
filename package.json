@@ -1,0 +1,15 @@
+{
+  "name": "j4j-selfbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "selfbot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "snekfetch": "^4.0.4"
+  }
+}

@@ -1,0 +1,12 @@
+
+*REQUIREMENTS*
+
+Node.js - https://nodejs.org/en/
+
+Discord.js@11.5.1 - install.bat
+
+
+INFO
+Using this selfbot will most likly get the account you are using it with disabled.(Use At Your Own Risk)
+
+I recommend using a vpn because most servers don't allow bots and you dont want to get ip banned.
