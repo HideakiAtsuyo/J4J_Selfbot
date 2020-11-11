@@ -28,7 +28,7 @@ client.on("message", message => {
    }
    if(message.content.includes('discord.gg') || message.content.includes('https://discord.gg/')) {
 }
-if(message.content.toLowerCase().includes("Bot") && message.content.includes(`<@${client.user.id}>`) || message.content.includes("bot") && message.content.includes(`<@!${client.user.id}>`)){
+if(message.content.toLowerCase().includes("Bot") && message.content.includes(`<@${client.user.id}>`) || message.content.toLowerCase().includes("Bot") && message.content.includes(`<@!${client.user.id}>`)){
   setTimeout(function NotAbot(){message.channel.send("I'm not a bot!");}, 7000);
 }
 })
