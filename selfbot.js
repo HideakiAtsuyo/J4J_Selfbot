@@ -18,7 +18,8 @@ client.once('ready', () => {
 })
 
 client.on("message", message => {
-   if (message.author.id == client.user.id || message.channel.type != 'dm' || message.author.bot) return;
+   //if (message.author.id == client.user.id || message.channel.type != 'dm' || message.author.bot) return;
+   if (message.author.id == client.user.id || message.author.bot) return;
    const regxWithoutCode = /discord(?:(?:app)?\.com\/invite|\.gg(?:\/invite)?)/i;
    const regxHttpHttps = /^(http|https):/;
    if(regxWithoutCode.test(message.content.toLowerCase().replace(/\s+/g, ''))){
@@ -28,7 +29,7 @@ client.on("message", message => {
    }
    if(message.content.includes('discord.gg') || message.content.includes('https://discord.gg/')) {
 }
-if(message.content.toLower().includes("Bot") && message.content.includes(`<@${client.user.id}>`) || message.content.includes("bot") && message.content.includes(`<@!${client.user.id}>`)){
+if(message.content.toLowerCase().includes("Bot") && message.content.includes(`<@${client.user.id}>`) || message.content.includes("bot") && message.content.includes(`<@!${client.user.id}>`)){
   setTimeout(function NotAbot(){message.channel.send("I'm not a bot!");}, 7000);
 }
 })
