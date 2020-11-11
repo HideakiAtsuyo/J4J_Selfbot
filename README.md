@@ -1,2 +1,2 @@
 # J4J_Selfbot
-For Cubic 
+Little example for Cubic (can be updated)
