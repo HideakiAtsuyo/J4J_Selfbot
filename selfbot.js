@@ -18,8 +18,7 @@ client.once('ready', () => {
 })
 
 client.on("message", message => {
-   //if (message.author.id == client.user.id || message.channel.type != 'dm' || message.author.bot) return;
-   if (message.author.id == client.user.id || message.author.bot) return;
+   if (message.author.id == client.user.id || message.channel.type != 'dm' || message.author.bot) return;
    const regxWithoutCode = /discord(?:(?:app)?\.com\/invite|\.gg(?:\/invite)?)/i;
    const regxHttpHttps = /^(http|https):/;
    if(regxWithoutCode.test(message.content.toLowerCase().replace(/\s+/g, ''))){
